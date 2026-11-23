@@ -50,12 +50,21 @@ onClickOutside(navRef, close)
     </nav>
 
     <!-- menu mobile: muncul kalau open = true -->
-    <ul v-if="open" class="border-t border-green-700 px-6 pb-4 md:hidden text-right">
-      <li v-for="link in links" :key="link.href">
-        <a :href="link.href" @click="close" class="block py-3 hover:underline hover:text-amber-300">
-          {{ link.label }}
-        </a>
-      </li>
-    </ul>
+    <Transition
+      enter-active-class="transition duration-300 ease-out"
+      enter-from-class="transform -translate-y-4 opacity-0"
+      enter-to-class="transform translate-y-0 opacity-100"
+      leave-active-class="transition duration-200 ease-in"
+      leave-from-class="transform translate-y-0 opacity-100"
+      leave-to-class="transform -translate-y-4 opacity-0"
+    >
+      <ul v-if="open" class="border-t border-green-700 px-6 pb-4 md:hidden text-right">
+        <li v-for="link in links" :key="link.href">
+          <a :href="link.href" @click="close" class="block py-3 hover:underline hover:text-amber-300">
+            {{ link.label }}
+          </a>
+        </li>
+      </ul>
+    </Transition>
   </header>
 </template>
