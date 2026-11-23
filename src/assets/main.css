@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand Colors - Bukit Ponggang */
+  --color-ponggang-50: #e8f5ec;
+  --color-ponggang-100: #c8e6d1;
+  --color-ponggang-500: #28a745;
+  --color-ponggang-600: #1e8436;
+  --color-ponggang-700: #1b6b38;
+  --color-ponggang-900: #0f3d20;
+
+  --color-surface-main: #ffffff;
+  --color-surface-alt: #f8faf9;
+
+  --color-accent-amber: #f59e0b;
+  --color-accent-sky: #0284c7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
