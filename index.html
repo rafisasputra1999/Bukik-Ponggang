@@ -47,28 +47,50 @@
     <meta property="twitter:image" content="https://netlify.app" />
 
       <!-- Schema Markup JSON-LD (TouristAttraction) -->
+        <!-- Schema Markup JSON-LD (TouristAttraction) -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "TouristAttraction",
         "name": "Bukik Ponggang",
-        "description": "Destinasi wisata alam bukit di Sijunjung, Sumatera Barat yang menawarkan pemandangan matahari terbenam (Sunset Camp), pertunjukan seni tradisional Randai Nagari, dan Festival Layang-Layang tahunan.",
+        "description": "Kawasan Wisata Bukik Ponggang di Kec. Kupitan, Kabupaten Sijunjung, Sumatera Barat. Menyediakan area camping ground, gardu pandang, kuliner lokal, dan festival layang-layang.",
         "url": "https://bukik-ponggang.netlify.app/",
         "image": "https://netlify.app",
-        "touristType": [
-          "Wisata Alam",
-          "Wisata Budaya",
-          "Camping"
-        ],
+        "telephone": "+6281266185783",
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "07:00",
+          "closes": "18:00"
+        },
+        "priceRange": "Rp 5.000 - Rp 10.000",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Sijunjung",
+          "streetAddress": "Kawasan Wisata Bukik Ponggang, Kec. Kupitan",
+          "addressLocality": "Kabupaten Sijunjung",
           "addressRegion": "Sumatera Barat",
           "addressCountry": "ID"
         },
-        "isAccessibleForFree": true
+        "amenityFeature": [
+          { "@type": "LocationFeatureSpecification", "name": "Area Parkir Luas", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Mushola & Toilet Bersih", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Warung Kuliner Lokal", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Gardu Pandang & Spot Foto", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Area Camping Ground", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Gazebo Istirahat", "value": true }
+        ],
+        "isAccessibleForFree": false
       }
     </script>
+
   </head>
   <body>
     <div id="app"></div>

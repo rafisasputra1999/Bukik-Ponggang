@@ -5,6 +5,7 @@ import AboutSection from './components/AboutSection.vue';
 import EventCard from './components/EventCard.vue';
 import GalleryGrid from './components/GalleryGrid.vue';
 import LocationMap from './components/LocationMap.vue';
+import FooterBar from './components/FooterBar.vue';
 
 </script>
 
@@ -15,4 +16,5 @@ import LocationMap from './components/LocationMap.vue';
   <EventCard/>
   <GalleryGrid/>
   <LocationMap/>
+  <FooterBar/>
 </template>
