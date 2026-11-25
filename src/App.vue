@@ -2,12 +2,17 @@
 import NavBar from './components/NavBar.vue'
 import HeroSection from './components/HeroSection.vue';
 import AboutSection from './components/AboutSection.vue';
+import EventCard from './components/EventCard.vue';
 import GalleryGrid from './components/GalleryGrid.vue';
+import LocationMap from './components/LocationMap.vue';
+
 </script>
 
 <template>
   <NavBar />
   <HeroSection/>
   <AboutSection/>
+  <EventCard/>
   <GalleryGrid/>
+  <LocationMap/>
 </template>
