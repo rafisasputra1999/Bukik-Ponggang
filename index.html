@@ -45,6 +45,30 @@
       content="Saksikan ratusan layang-layang hias di langit Sijunjung, nikmati Sunset Camp, dan kesenian daerah di Bukik Ponggang."
     />
     <meta property="twitter:image" content="https://netlify.app" />
+
+      <!-- Schema Markup JSON-LD (TouristAttraction) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "TouristAttraction",
+        "name": "Bukik Ponggang",
+        "description": "Destinasi wisata alam bukit di Sijunjung, Sumatera Barat yang menawarkan pemandangan matahari terbenam (Sunset Camp), pertunjukan seni tradisional Randai Nagari, dan Festival Layang-Layang tahunan.",
+        "url": "https://bukik-ponggang.netlify.app/",
+        "image": "https://netlify.app",
+        "touristType": [
+          "Wisata Alam",
+          "Wisata Budaya",
+          "Camping"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Sijunjung",
+          "addressRegion": "Sumatera Barat",
+          "addressCountry": "ID"
+        },
+        "isAccessibleForFree": true
+      }
+    </script>
   </head>
   <body>
     <div id="app"></div>

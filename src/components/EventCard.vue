@@ -13,7 +13,7 @@ const featuredEvent = {
     'Bazar Kuliner & Kerajinan Nagari',
     'Hiburan Musik & Kesenian Daerah'
   ],
-  image: '/img/hero/hero-4.jpg' // Sesuaikan dengan path gambar Anda
+  image: '/img/hero/hero-4.jpg'
 }
 
 const upcomingEvents = ref([
